@@ -100,9 +100,9 @@ int main(int argc, char *argv[]) {
 					schedInfo = list_getNdObj(ndPtr); //get the object (scheduling info)
 					
 					//fill code this part - end
-					if(sched_getMonth(schedInfo) == month)						
+					if(sched_getMonth(schedInfo) == month)//if equal with input month						
 					{
-						sched_print(schedInfo); 						
+						sched_print(schedInfo); //print related information of schedInfo						
 						printf("------------------------------------------------\n");
 					}
 				}
@@ -123,9 +123,9 @@ int main(int argc, char *argv[]) {
 					schedInfo = list_getNdObj(ndPtr); //get the object (scheduling info)
 					
 					//fill code this part - end					
-					if(!strcmp(sched_getPlace(schedInfo),place))	
+					if(!strcmp(sched_getPlace(schedInfo),place))	//if equal with input place			
 					{
-						sched_print(schedInfo);							
+						sched_print(schedInfo);//print related information of schedInfo								
 						printf("------------------------------------------------\n");
 					}
 				}								
@@ -149,9 +149,9 @@ int main(int argc, char *argv[]) {
 						schedInfo = list_getNdObj(ndPtr); //get the object (scheduling info)
 						
 						//fill code this part - end						
-						if(sched_convertType(typeName) == sched_getType(schedInfo))						
+						if(sched_convertType(typeName) == sched_getType(schedInfo))	//if equal with input schedule type					
 						{
-							sched_print(schedInfo); 						
+							sched_print(schedInfo);//print related information of schedInfo		 						
 							printf("------------------------------------------------\n");
 						}
 					}
